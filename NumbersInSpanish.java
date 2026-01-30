@@ -4,18 +4,24 @@ public class NumbersInSpanish {
         int number = Integer.parseInt(args[0]); 
 
         String outStr = "";
-        if (number == 1) {
-            outStr = "uno";
-        } else if (number == 2) {
-            outStr = "dos";
-        } else if (number == 3) {
-            outStr = "tres";
-        } else if (number == 4) {
-            outStr = "cuatro";
-        } else if (number == 5) {
-            outStr = "cinco";
-        } else {
-            outStr = "Sorry i do not know that!";
+        switch (number) {
+            case 1:
+                outStr = "uno";
+                break;
+            case 2:
+                outStr = "dos";
+                break;
+            case 3:
+                outStr = "tres";
+                break;
+            case 4:
+                outStr = "cuatro";
+                break;
+            case 5:
+                outStr = "cinco";
+                break;
+            default:
+                outStr = "Sorry i do not know that!";
         }
         System.out.println(outStr);
     }
